@@ -14,9 +14,15 @@ class App < Sinatra::Base
 
   end
   
-  post '/checkout' do
-    "#{params[:item]}"
-    erb :checkout
-  end 
+#  post '/checkout' do
+ #   "#{params[:item]}"
+#    erb :checkout
+ # end 
+
+ post '/checkout' do 
+   "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
+  
+ end
+
 
 end 
