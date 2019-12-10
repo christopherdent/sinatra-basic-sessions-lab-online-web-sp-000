@@ -20,7 +20,7 @@ class App < Sinatra::Base
 #    erb :checkout
  # end 
 
- POST '/checkout' do 
+ post '/checkout' do 
    "#{params[:item]}"
   
  end
