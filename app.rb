@@ -15,7 +15,7 @@ class App < Sinatra::Base
   end
   
   post '/checkout' do
-    "hello"
+    "#{params[:item]}"
     erb :checkout
   end 
 
