@@ -9,8 +9,8 @@ class App < Sinatra::Base
 
 
   get "/" do
-    session["item"] = "#{params[:item]}"
-    @session = session 
+#    session["item"] = "#{params[:item]}"
+ #   @session = session 
     erb :index
 
   end
@@ -21,6 +21,8 @@ class App < Sinatra::Base
  # end 
 
  post '/checkout' do 
+    session["item"] = "#{params[:item]}"
+    @session = session 
    "#{params[:item]}"
   
  end
