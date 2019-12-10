@@ -16,6 +16,7 @@ class App < Sinatra::Base
   
   post '/checkout' do
     "hello"
+    erb :cart
   end 
 
 end 
